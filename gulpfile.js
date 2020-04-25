@@ -12,3 +12,6 @@ const browserSync = require(`browser-sync`);
 const reload = browserSync.reload;
 const cssLinter = require(`gulp-stylelint`);
 const cleanCSS = require(`gulp-clean-css`);
+//const babelCore = require(`babel-core`);
+//const babelPresentEnv = require(`@babel/preset-env`);
+
