@@ -100,3 +100,11 @@ let transpileJSForDev = () => {
         .pipe(dest(`./.temp/js`));
 };
 
+let transpileJSForProd = () => {
+    return src(`js/*.js`)
+        .pipe(babel())
+        .pipe(jsCompressor())
+        .pipe(dest(`prod/js`));
+
+};
+
