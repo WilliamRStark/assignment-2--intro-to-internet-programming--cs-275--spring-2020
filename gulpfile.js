@@ -132,3 +132,33 @@ let lintJS = () => {
         .pipe(jsLinter.formatEach(`compact`, process.stderr));
 };
 
+let serve = () => {
+    browserSync({
+        notify: true,
+        port: 9000,
+        reloadDelay: 50,
+        browser: browserChoice,
+        server: {
+            baseDir: [
+                `./.temp`,
+                `dev`,
+                `html`
+            ]
+        }
+    });
+
+    watch(`js/*.js`,
+        series(lintJS, transpileJSForDev)
+    ).on(`change`, reload);
+
+    watch(`styles/**/*.scss`,
+        series(compileCSSForDev)
+    ).on(`change`, reload);
+
+    watch(`html/**/*.html`,
+        series(validateHTML)
+    ).on(`change`, reload);
+
+    watch(`img/**/*`).on(`change`, reload);
+};
+
