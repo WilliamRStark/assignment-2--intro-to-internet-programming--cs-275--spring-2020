@@ -224,3 +224,4 @@ exports.build = series(compressHTML, compressCSS, transpileJSForProd);
 exports.serve = series(lintCSS, lintJS, transpileJSForDev, validateHTML
     , serve);
 
+exports.clean = clean;
