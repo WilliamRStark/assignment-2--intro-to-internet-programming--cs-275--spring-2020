@@ -88,3 +88,9 @@ let compileCSSForProd = () => {
         .pipe(dest(`prod/styles`));
 };
 
+let compressCSS = () => {
+    return src(`styles/*.css`)
+        .pipe(cleanCSS({compatibility: `ie8`}))
+        .pipe(dest(`prod/styles`));
+};
+
