@@ -15,3 +15,35 @@ const cleanCSS = require(`gulp-clean-css`);
 //const babelCore = require(`babel-core`);
 //const babelPresentEnv = require(`@babel/preset-env`);
 
+let browserChoice = `default`;
+
+async function safari () {
+    browserChoice = `safari`;
+}
+
+async function firefox () {
+    browserChoice = `firefox`;
+}
+
+async function chrome () {
+    browserChoice = `google chrome`;
+}
+
+async function opera () {
+    browserChoice = `opera`;
+}
+
+async function edge () {
+    browserChoice = `microsoft-edge`;
+}
+
+async function allBrowsers () {
+    browserChoice = [
+        `safari`,
+        `firefox`,
+        `google chrome`,
+        `opera`,
+        `microsoft-edge`
+    ];
+}
+
