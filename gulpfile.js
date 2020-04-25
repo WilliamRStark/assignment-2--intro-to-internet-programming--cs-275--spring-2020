@@ -132,6 +132,19 @@ let lintJS = () => {
         .pipe(jsLinter.formatEach(`compact`, process.stderr));
 };
 
+let copyUnprocessedAssetsForProd = () => {
+    return src([
+        `*.*`,       // Source all files,
+        `**`,        // and all folders,
+        `!html/`,    // but not the HTML folder
+        `!html/*.*`, // or any files in it
+        `!html/**`,  // or any sub folders;
+        `!img/`,     // ignore images;
+        `!**/*.js`,  // ignore JS;
+        `!styles/**` // and, ignore Sass/CSS.
+    ], {dot: true}).pipe(dest(`prod`));
+};
+
 let serve = () => {
     browserSync({
         notify: true,
