@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Rice Recipies</title>
+   <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Rice Recipies</h1>
+  </header>
+  <main>
+    <button id = "white-rice-button">White Rice</button>
+    <button id = "california-rice-button">Sprouted California Rice</button>
+    <label for="amount-of-rice">Amount of rice you would like to make in cups:</label>
+    <input type="text" id="amount-of-rice" name="amount-of-rice" required
+      minlength="1" maxlength="2" size="2" placeholder="0">
+    <div id="white">
+      <h2>Making White Rice</h2>
+      <p>
+        Combine <b id="cups-of-rice1"></b> cup(s) of rice with <b id="white-water-amount"></b> fl oz of water and 1 Tbsp olive oil. Bring to a boil, then reduce heat to the lowest setting. Cook for about 18 minutes.
+      </p>
+      <p>
+        16 fl oz of water per 1 cup of rice.
+      </p>
+    </div>
+    <div id="california">
+      <h2>Making Sprouted California Rice</h2>
+      <h3>
+        For slightly al dente rice:
+      </h3>
+      <p>
+        Combine <b id="cups-of-rice2"></b> cup(s) of rice with <b id="california-water-amount"></b> fl oz of water or broth and 1 Tbsp olive oil. Bring to a boil and stir once to mix. Reduce heat to low, cover with a tight-fitting lid and cook for 25 minutes. Remove from heat and let stand for 5 minutes. Fluff with a fork and serve.
+      </p>
+      <p>
+        12.8 fl oz of water per 1 cup of rice.
+      </p>
+      <h3>
+        For softer rice:
+      </h3>
+      <p>
+        Increase liquid by <b id="aldente-water-amount"></b> fl oz and cook time by 5 minutes.
+      </p>
+      <p>
+        16 fl oz of water per 1 cup of rice.
+      </p>
+    </div>
+  </main>
+  <script src="../js/app.js"></script>
+</body>
+</html>
