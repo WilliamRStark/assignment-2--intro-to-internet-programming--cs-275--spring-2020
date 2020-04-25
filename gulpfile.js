@@ -221,3 +221,6 @@ exports.copyUnprocessedAssetsForProd = copyUnprocessedAssetsForProd;
 exports.compressCSS = compressCSS;
 exports.dev = series(validateHTML, lintCSS, lintJS, transpileJSForDev, serve);
 exports.build = series(compressHTML, compressCSS, transpileJSForProd);
+exports.serve = series(lintCSS, lintJS, transpileJSForDev, validateHTML
+    , serve);
+
