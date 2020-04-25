@@ -70,3 +70,12 @@ let lintCSS = () => {
 
 };
 
+let compileCSSForDev = () => {
+    return src(`styles/main.scss`)
+        .pipe(sass({
+            outputStyle: `expanded`,
+            precision: 10
+        }).on(`error`, sass.logError))
+        .pipe(dest(`.temp/styles`));
+};
+
