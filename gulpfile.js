@@ -79,3 +79,12 @@ let compileCSSForDev = () => {
         .pipe(dest(`.temp/styles`));
 };
 
+let compileCSSForProd = () => {
+    return src(`styles/main.scss`)
+        .pipe(sass({
+            outputStyle: `compressed`,
+            precision: 10
+        }).on(`error`, sass.logError))
+        .pipe(dest(`prod/styles`));
+};
+
