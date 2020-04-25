@@ -202,3 +202,20 @@ async function listTasks () {
     });
 }
 
+exports.safari = series(safari, serve);
+exports.firefox = series(firefox, serve);
+exports.chrome = series(chrome, serve);
+exports.opera = series(opera, serve);
+exports.edge = series(edge, serve);
+exports.safari = series(safari, serve);
+exports.allBrowsers = series(allBrowsers, serve);
+exports.validateHTML = validateHTML;
+exports.compressHTML = compressHTML;
+exports.lintCSS = lintCSS;
+exports.compileCSSForDev = compileCSSForDev;
+exports.compileCSSForProd = compileCSSForProd;
+exports.transpileJSForDev = transpileJSForDev;
+exports.transpileJSForProd = transpileJSForProd;
+exports.lintJS = lintJS;
+exports.copyUnprocessedAssetsForProd = copyUnprocessedAssetsForProd;
+exports.compressCSS = compressCSS;
