@@ -225,3 +225,4 @@ exports.serve = series(lintCSS, lintJS, transpileJSForDev, validateHTML
     , serve);
 
 exports.clean = clean;
+exports.default = listTasks;
