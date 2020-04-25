@@ -58,3 +58,15 @@ let compressHTML = () => {
         .pipe(dest(`prod/html`));
 };
 
+let lintCSS = () => {
+
+    return src(`css/*.css`)
+        .pipe(cssLinter({
+            failAfterError: true,
+            reporters: [
+                {formatter: `verbose`, console: true}
+            ]
+        }));
+
+};
+
