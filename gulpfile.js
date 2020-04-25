@@ -47,3 +47,8 @@ async function allBrowsers () {
     ];
 }
 
+let validateHTML = () => {
+    return src([`html/*.html`,`html/**/*.html`])
+        .pipe(htmlValidator());
+};
+
