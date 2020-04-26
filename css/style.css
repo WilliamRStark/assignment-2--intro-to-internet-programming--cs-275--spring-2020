@@ -9,3 +9,16 @@ header {
   margin-top: 20px;
 }
 
+h1 {
+  font-family: Raleway, serif;
+  font-size: 48px;
+  text-align: center;
+  color: #eae178;
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: solid;
+  border-color: #b69b4c;
+  border-radius: 100px;
+}
+
