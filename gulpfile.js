@@ -68,7 +68,9 @@ let lintCSS = () => {
 let compressCSS = () => {
     return src(`css/*.css`)
         .pipe(cleanCSS({compatibility: `ie8`}))
-        .pipe(dest(`prod/styles`));
+        .pipe(dest(`prod/css`));
+};
+
 };
 
 let transpileJSForDev = () => {
