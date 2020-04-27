@@ -46,6 +46,10 @@ label {
   font-family: Raleway, monospace;
 }
 
+button:nth-child(1) {
+  margin-left: 20%;
+}
+
 p {
   color: #fffadc;
   background-color: rgba(0, 0, 0, 0);
