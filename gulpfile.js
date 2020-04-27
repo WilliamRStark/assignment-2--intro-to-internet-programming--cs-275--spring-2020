@@ -79,7 +79,7 @@ let copyCSS = () => {
 let transpileJSForDev = () => {
     return src(`js/*.js`)
         .pipe(babel())
-        .pipe(dest(`./.temp/js`));
+        .pipe(dest(`temp/js`));
 };
 
 let transpileJSForProd = () => {
