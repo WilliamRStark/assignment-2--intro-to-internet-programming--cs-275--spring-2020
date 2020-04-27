@@ -66,7 +66,7 @@ let lintCSS = () => {
 };
 
 let compressCSS = () => {
-    return src(`styles/*.css`)
+    return src(`css/*.css`)
         .pipe(cleanCSS({compatibility: `ie8`}))
         .pipe(dest(`prod/styles`));
 };
