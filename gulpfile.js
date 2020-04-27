@@ -144,7 +144,7 @@ let serve = () => {
 async function clean() {
     let fs = require(`fs`),
         i,
-        foldersToDelete = [`./.temp`, `prod`];
+        foldersToDelete = [`./temp`, `prod`];
 
     for (i = 0; i < foldersToDelete.length; i++) {
         try {
