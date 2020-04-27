@@ -139,8 +139,6 @@ let serve = () => {
     watch(`html/**/*.html`,
         series(validateHTML)
     ).on(`change`, reload);
-
-    watch(`img/**/*`).on(`change`, reload);
 };
 
 async function clean() {
