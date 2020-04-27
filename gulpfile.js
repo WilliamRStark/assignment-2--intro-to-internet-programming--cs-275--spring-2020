@@ -65,24 +65,6 @@ let lintCSS = () => {
 
 };
 
-let compileCSSForDev = () => {
-    return src(`styles/main.scss`)
-        .pipe(sass({
-            outputStyle: `expanded`,
-            precision: 10
-        }).on(`error`, sass.logError))
-        .pipe(dest(`.temp/styles`));
-};
-
-let compileCSSForProd = () => {
-    return src(`styles/main.scss`)
-        .pipe(sass({
-            outputStyle: `compressed`,
-            precision: 10
-        }).on(`error`, sass.logError))
-        .pipe(dest(`prod/styles`));
-};
-
 let compressCSS = () => {
     return src(`styles/*.css`)
         .pipe(cleanCSS({compatibility: `ie8`}))
