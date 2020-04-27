@@ -71,6 +71,9 @@ let compressCSS = () => {
         .pipe(dest(`prod/css`));
 };
 
+let copyCSS = () => {
+    return src (`css/*.css`)
+        .pipe(dest(`temp/css/`));
 };
 
 let transpileJSForDev = () => {
