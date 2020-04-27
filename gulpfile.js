@@ -192,6 +192,7 @@ exports.validateHTML = validateHTML;
 exports.compressHTML = compressHTML;
 exports.lintCSS = lintCSS;
 exports.compressCSS = compressCSS;
+exports.copyCSS = copyCSS;
 exports.lintJS = lintJS;
 exports.transpileJSForDev = transpileJSForDev;
 exports.transpileJSForProd = transpileJSForProd;
