@@ -40,6 +40,12 @@ h3 {
   padding-top: 16px;
 }
 
+label {
+  color: #fffadc;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: Raleway, monospace;
+}
+
 p {
   color: #fffadc;
   background-color: rgba(0, 0, 0, 0);
