@@ -50,7 +50,7 @@ let validateHTML = () => {
 let compressHTML = () => {
     return src([`html/*.html`,`html/**/*.html`])
         .pipe(htmlCompressor({collapseWhitespace: true}))
-        .pipe(dest(`prod/html`));
+        .pipe(dest(`prod`));
 };
 
 let lintCSS = () => {
