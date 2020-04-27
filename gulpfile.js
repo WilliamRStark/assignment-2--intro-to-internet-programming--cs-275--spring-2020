@@ -191,11 +191,11 @@ exports.allBrowsers = series(allBrowsers, serve);
 exports.validateHTML = validateHTML;
 exports.compressHTML = compressHTML;
 exports.lintCSS = lintCSS;
+exports.compressCSS = compressCSS;
+exports.lintJS = lintJS;
 exports.transpileJSForDev = transpileJSForDev;
 exports.transpileJSForProd = transpileJSForProd;
-exports.lintJS = lintJS;
 exports.copyUnprocessedAssetsForProd = copyUnprocessedAssetsForProd;
-exports.compressCSS = compressCSS;
 
 exports.dev = series(validateHTML, lintCSS, lintJS, transpileJSForDev, serve);
 exports.build = series(compressHTML, compressCSS, transpileJSForProd,
