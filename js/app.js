@@ -68,7 +68,7 @@ window.onload =()=>{
         tempSum = 12.8 * e.target.value;
         californiaWaterAmount.textContent = tempSum.toFixed(1);
         tempSum = 3.2 * e.target.value;
-        alDenteWaterAmount.textContent = tempSum.toFixed(1);
+        softWaterAmount.textContent = tempSum.toFixed(1);
     }
 
     if (null !== whiteRiceButton)
