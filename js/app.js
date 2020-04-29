@@ -59,7 +59,10 @@ window.onload =()=>{
             cupsOfRice1.textContent = 0;
             cupsOfRice2.textContent = 0;
         }
+
         whiteWaterAmount.textContent = 16 * e.target.value;
+        whiteOilAmount.textContent = 2 * e.target.value;
+
         tempSum = 12.8 * e.target.value;
         californiaWaterAmount.textContent = tempSum.toFixed(1);
         tempSum = 3.2 * e.target.value;
