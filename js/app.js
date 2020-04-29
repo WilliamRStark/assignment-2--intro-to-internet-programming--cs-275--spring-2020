@@ -16,7 +16,7 @@ window.onload =()=>{
         cupsOfRice2 = document.getElementById(`cups-of-rice2`),
         whiteWaterAmount = document.getElementById(`white-water-amount`),
         californiaWaterAmount = document.getElementById(`california-water-amount`),
-        alDenteWaterAmount = document.getElementById(`aldente-water-amount`);
+        softWaterAmount = document.getElementById(`soft-water-amount`),
 
     californiaSection.style.visibility = `hidden`;
     whiteSection.style.visibility = `hidden`;
