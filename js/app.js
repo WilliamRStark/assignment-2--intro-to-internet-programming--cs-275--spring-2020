@@ -28,6 +28,7 @@ window.onload =()=>{
     whiteWaterAmount.textContent = 0;
     californiaWaterAmount.textContent = 0;
     softWaterAmount.textContent = 0;
+    whiteOilAmount.textContent = 0;
 
     function showWhiteRice()
     {
