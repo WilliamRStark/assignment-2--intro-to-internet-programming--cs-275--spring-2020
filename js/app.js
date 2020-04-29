@@ -27,7 +27,7 @@ window.onload =()=>{
     cupsOfRice2.textContent = 0;
     whiteWaterAmount.textContent = 0;
     californiaWaterAmount.textContent = 0;
-    alDenteWaterAmount.textContent = 0;
+    softWaterAmount.textContent = 0;
 
     function showWhiteRice()
     {
