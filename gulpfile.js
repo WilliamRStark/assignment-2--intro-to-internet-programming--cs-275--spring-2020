@@ -133,7 +133,7 @@ let serve = () => {
     ).on(`change`, reload);
 
     watch(`css/*.css`,
-        series(lintCSS)
+        series(lintCSS, copyCSS)
     ).on(`change`, reload);
 
     watch(`html/**/*.html`,
