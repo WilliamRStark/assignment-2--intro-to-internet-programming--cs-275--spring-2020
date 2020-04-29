@@ -17,6 +17,7 @@ window.onload =()=>{
         whiteWaterAmount = document.getElementById(`white-water-amount`),
         californiaWaterAmount = document.getElementById(`california-water-amount`),
         softWaterAmount = document.getElementById(`soft-water-amount`),
+        whiteOilAmount = document.getElementById(`white-oil-amount`),
 
     californiaSection.style.visibility = `hidden`;
     whiteSection.style.visibility = `hidden`;
